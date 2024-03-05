@@ -242,12 +242,7 @@ export async function getVersionPrBody({
   prBodyMaxCharacters,
   branch,
 }: GetMessageOptions) {
-  let messageHeader = `This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and ${
-    hasPublishScript
-      ? `the packages will be published to npm automatically`
-      : `publish to npm yourself or [setup this action to publish automatically](https://github.com/changesets/action#with-publishing)`
-  }. If you're not ready to do a release yet, that's fine, whenever you add more changesets to ${branch}, this PR will be updated.
-`;
+  let messageHeader = `This PR was opened by a GitHub Action to signify a new release is ready!`;
   let messagePrestate = !!preState
     ? `⚠️⚠️⚠️⚠️⚠️⚠️
 
