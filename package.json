@@ -49,10 +49,6 @@
     "semver": "^7.5.3",
     "unified": "^8.3.2"
   },
-  "husky": {
-    "hooks": {}
-  },
-  "prettier": {},
   "resolutions": {
     "**/@octokit/core": "4.2.0",
     "trim": "^0.0.3",
